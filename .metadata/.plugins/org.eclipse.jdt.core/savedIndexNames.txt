@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Udemy - Testes Unitarios Junit\TestesUnitarios\.metadata\.plugins\org.eclipse.jdt.core
+3924229942.index
+1307485305.index
+3395328461.index

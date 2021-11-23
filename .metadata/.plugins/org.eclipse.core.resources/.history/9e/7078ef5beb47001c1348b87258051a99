@@ -1,0 +1,24 @@
+package br.ce.wcaquino.servicos;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+public class AssertTest {
+
+	@Test
+	public void test() {
+		Assert.assertTrue(true);
+		Assert.assertFalse(false);
+		Assert.assertEquals(1, 1);
+		Assert.assertEquals(0.51, 0.51, 0.01); // delta é uma margem de erro
+		Assert.assertEquals(0.51234, 0.512, 0.001); // delta é uma margem de erro
+		Assert.assertEquals(Math.PI, 3.14, 0.01);
+		
+		int i =5;
+		Integer i2 = 5;
+		
+		Assert.assertEquals(Integer.valueOf(i), i2); // Passando o tipo Primitivo para Classe;
+		Assert.assertEquals(i,  i2.intValue()); // Transformando a Classe em tipoPrimitivo.
+		Assert.assertTrue("bola".equalsIgnoreCase("Bola"));
+	}
+}
